@@ -1,0 +1,194 @@
+
+.body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.body_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    width: 40%;
+    background-color: rgba(66, 66, 66, 0.273);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+
+.body_right{
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    max-width: 400px; 
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.27);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.friends{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    max-width: 400px; 
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    flex: 1;
+}
+
+h2, h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 7px;
+}
+
+h3{
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+
+button.btn:hover {
+    background-color: #1e2125;
+    cursor: pointer;
+}
+
+form.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form .Name, form .Img {
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .body_left, .body_right {
+        width: 100%;
+        height: auto;
+    }
+
+    .friend {
+        width: 100%;
+    }
+
+    button.btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+.body_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 40%;
+    background-color: rgba(66, 66, 66, 0.273);
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.friends {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; 
+    padding: 15px; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.expense {
+    margin-bottom: 5px;
+    font-weight: 400; 
+}
+
+.expense label {
+    display: block;
+    margin-bottom: 5px; 
+    font-size: 16px; 
+}
+
+.expense input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+option{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
